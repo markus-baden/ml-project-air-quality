@@ -27,6 +27,7 @@ def replace_nan(x):
         return float(x)
 
 
+
 def convert_str_to_list(data, features):
     for feature in features : 
         data[feature]=data[feature].apply(lambda x: [ replace_nan(X) for X in x.replace("nan"," ").split(",")])
